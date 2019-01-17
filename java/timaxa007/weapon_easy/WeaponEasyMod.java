@@ -32,7 +32,7 @@ public class WeaponEasyMod {
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		item_weapon_easy = new ItemWeapon().setUnlocalizedName("weapon_easy").setCreativeTab(CreativeTabs.tabMisc).setHasSubtypes(true).setMaxDamage(0).setFull3D().setMaxStackSize(1);
+		item_weapon_easy = new ItemWeapon().setUnlocalizedName("weapon_easy").setTextureName(WeaponEasyMod.MODID + ":weapon_easy").setCreativeTab(CreativeTabs.tabMisc).setHasSubtypes(true).setMaxDamage(0).setFull3D().setMaxStackSize(1);
 		GameRegistry.registerItem(item_weapon_easy, "item_weapon_easy");
 
 		EntityRegistry.registerModEntity(EntityBullet.class, WeaponEasyMod.MODID + ".entity_bullet", 0, WeaponEasyMod.instance, 120, 20, true);
